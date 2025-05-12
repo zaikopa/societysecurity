@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guía de Estudio | Security</title>
+    <link rel="stylesheet" href="guia-de-estudio.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+<nav>
+  <ul>
+    <li><a href="index.html">Inicio</a></li>
+    <li><a href="personal.html">Personal</a></li>
+    <li><a href="guia-estudio.html">Guía de Estudio</a></li>
+  </ul>
+</nav>
+
+<section class="teletrabajo">
+  <h2>Todo sobre el Teletrabajo</h2>
+  <div class="tarjetas-teletrabajo">
+
+<div class="tarjeta" id="tarjeta1" onclick="abrirModal(
+  '¿Qué es el Teletrabajo?',
+  'Es una modalidad laboral que permite realizar tareas fuera de las instalaciones tradicionales, generalmente desde el hogar, apoyándose en tecnologías digitales.',
+  'teletrabajo.jpg')">
+  <h3>¿Qué es el Teletrabajo?</h3>
+  <p>Trabajar fuera de la empresa usando tecnología.</p>
+</div>
+
+<div class="tarjeta" id="tarjeta2" onclick="abrirModal(
+  '¿Qué modalidades o tipos de teletrabajo existen?',
+  'Existen diversas formas de teletrabajo dependiendo del lugar, la frecuencia y el tipo de tareas realizadas. Algunas son desde casa, híbrido, nómada, entre otros.',
+  'tiposdeteletrabajo.jpg')">
+  <h3>¿Qué modalidades o tipos de teletrabajo existen?</h3>
+  <p>Formas variadas de organizar el trabajo remoto.</p>
+</div>
+
+<div class="tarjeta" id="tarjeta3" onclick="abrirModal(
+  'Ventajas del Teletrabajo para el Trabajador',
+  'Más tiempo libre, reducción de traslados, mejor balance personal-laboral, y mayor autonomía en las tareas.',
+  'ventajaT.jpg')">
+  <h3>Para el trabajador</h3>
+  <p>Flexibilidad, ahorro y equilibrio personal.</p>
+</div>
+
+<div class="tarjeta" id="tarjeta4" onclick="abrirModal(
+  'Ventajas del Teletrabajo para la Empresa',
+  'Mayor productividad, ahorro en infraestructura, retención de talento, y reducción de ausentismo.',
+  'ventajaE.jpg')">
+  <h3>Para la empresa</h3>
+  <p>Productividad y reducción de costos.</p>
+</div>
+
+<div class="tarjeta" id="tarjeta5" onclick="abrirModal(
+  '¿Cuáles son las desventajas del teletrabajo?',
+  'Aislamiento social, dificultad para separar lo laboral de lo personal, dependencia tecnológica, y problemas ergonómicos.',
+  'desventaja.jpg')">
+  <h3>¿Cuáles son las desventajas del teletrabajo?</h3>
+  <p>Aislamiento, distracciones, y dificultad de desconexión.</p>
+</div>
+
+<div class="tarjeta" id="tarjeta6" onclick="abrirModal(
+  '¿Cómo se vive el teletrabajo en Argentina?',
+  'En Argentina, el teletrabajo creció aceleradamente desde la pandemia. Hay desafíos de conectividad, legislación y adaptación cultural.',
+  'argentinateletrabajo.jpg')">
+  <h3>¿Cómo se vive el teletrabajo en Argentina?</h3>
+  <p>Una práctica creciente con desafíos propios.</p>
+</div>
+
+<div class="tarjeta" id="tarjeta7" onclick="abrirModal(
+  '¿Qué oportunidades brinda el teletrabajo para Argentina?',
+  'Permite descentralizar el empleo, impulsar economías regionales, generar inclusión laboral y mejorar el acceso a oportunidades.',
+  'oportunidades.jpg')">
+  <h3>¿Qué oportunidades brinda el teletrabajo para Argentina?</h3>
+  <p>Impulsa inclusión y desarrollo regional.</p>
+</div>
+
+<div class="tarjeta" id="tarjeta8" onclick="abrirModal(
+  '¿Cómo oportunidad para acceder a más y mejores empleos?',
+  'El teletrabajo permite a personas de distintas regiones y realidades acceder a empleos calificados sin necesidad de relocalizarse.',
+  'masempleo.jpg')">
+  <h3>¿El teletrabajo permite acceder a más empleos?</h3>
+  <p>Rompe barreras geográficas y sociales.</p>
+</div>
+
+<div class="tarjeta" id="tarjeta9" onclick="abrirModal(
+  '¿También es una oportunidad para reactivar el turismo?',
+  'Sí. Muchas localidades fomentan el “nómadismo digital”, atrayendo trabajadores remotos con buena conectividad, alojamiento y servicios.',
+  'turismo.jpg')">
+  <h3>¿El teletrabajo puede reactivar el turismo?</h3>
+  <p>El nomadismo digital revitaliza regiones turísticas.</p>
+</div>
+
+<div class="tarjeta" id="tarjeta10" onclick="abrirModal(
+  '¿Existe en Argentina una ley del teletrabajo?',
+  'Sí, desde el 2021 está vigente la Ley 27.555 que regula derechos y obligaciones del teletrabajo en Argentina.',
+  'ley.jpg')">
+  <h3>¿Existe en Argentina una ley del teletrabajo?</h3>
+  <p>La Ley 27.555 establece reglas claras.</p>
+</div>
+
+  </div>
+</section>
+
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span class="cerrar" onclick="cerrarModal()">&times;</span>
+    <div class="modal-izquierda">
+      <h3 id="modal-titulo"></h3>
+      <p id="modal-texto"></p>
+    </div>
+    <div class="modal-derecha">
+      <img id="modal-imagen" src="" alt="Imagen ilustrativa">
+    </div>
+  </div>
+</div>
+
+<script src="modal.js"></script>
+</body>
+</html>

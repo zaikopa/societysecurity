@@ -646,25 +646,26 @@
 
 /* Organigrama */
 .organigrama .imagen img {
-  width: 100%; /* Asegura que la imagen ocupe el 100% del ancho disponible */
-  max-width: 100%; /* Evita que la imagen se desborde */
-  height: auto; /* Mantiene la proporción de la imagen */
-  object-fit: contain; /* Ajusta la imagen sin distorsionarla */
+  width: 100%; 
+  max-width: 100%; 
+  height: auto; 
+  object-fit: contain; 
 }
 
-/* Aumentar el tamaño del organigrama en pantallas grandes */
+/* Aumenta organigrama en pantallas grandes */
 @media (min-width: 768px) {
   .organigrama .imagen img {
-    max-width: 80%; /* Ajusta el tamaño a un 80% en pantallas más grandes */
-    margin: 0 auto; /* Centra la imagen */
-    display: block; /* Asegura que la imagen sea un bloque */
+    max-width: 80%; 
+    margin: 0 auto; 
+    display: block; 
   }
 }
 
 /* Responsividad para pantallas pequeñas */
 @media (max-width: 768px) {
   .organigrama .imagen img {
-    max-width: 100%; /* Asegura que en pantallas pequeñas ocupe el 100% del ancho */
-    margin: 0; /* Elimina márgenes */
+    max-width: 100%; 
+    margin: 0; 
   }
 }
+
