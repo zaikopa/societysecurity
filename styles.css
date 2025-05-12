@@ -334,3 +334,110 @@
   width: 100%; /* Si tu organigrama es una imagen, ajusta su ancho */
   height: auto; /* Mantén la proporción de la imagen */
 }
+
+/* Secciones con fondo blanco */
+.somos,
+.valores-recursos,
+.mision-vision,
+.foda,
+.instalaciones,
+.localizacion,
+.organigrama {
+  background: #ffffff;  /* Fondo blanco */
+  padding: 3rem 2rem;
+  margin: 3rem auto;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.3s ease;
+  width: 90%;
+}
+
+/* Efecto hover para resaltar cuando el ratón pase sobre la caja */
+.somos:hover,
+.valores-recursos:hover,
+.mision-vision:hover,
+.foda:hover,
+.instalaciones:hover,
+.localizacion:hover,
+.organigrama:hover {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Estilo para los títulos de las secciones */
+.somos h2,
+.valores-recursos h2,
+.mision-vision h2,
+.foda h2,
+.instalaciones h2,
+.localizacion h2,
+.organigrama h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+/* Subtítulos y párrafos dentro de las secciones */
+.somos .subtitulo,
+.valores-recursos .subtitulo,
+.mision-vision .subtitulo,
+.foda .subtitulo,
+.instalaciones .subtitulo,
+.localizacion .subtitulo,
+.organigrama .subtitulo {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+}
+
+.somos p,
+.valores-recursos p,
+.mision-vision p,
+.foda p,
+.instalaciones p,
+.localizacion p,
+.organigrama p {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin-top: 1rem;
+}
+
+/* Estilo para los grids de las secciones */
+.valores-recursos .grid,
+.foda .grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.valores-recursos h3,
+.foda h3 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.valores-recursos ul,
+.foda ul {
+  list-style: disc;
+  text-align: left;
+  padding-left: 1.5rem;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Estilo para el Organigrama */
+.organigrama pre {
+  margin: 0;
+  padding: 0;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.organigrama img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
