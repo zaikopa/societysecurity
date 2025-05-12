@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(120deg, #f3e5f5, #e1bee7);
+    background-size: 300% 300%;
+    animation: subtleBG 20s ease infinite;
+    color: #111;
+    line-height: 1.6;
+  }
+  @keyframes subtleBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    z-index: 1000;
+  }
+  nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 1rem;
+  }
+  nav ul li {
+    margin: 0 1.5rem;
+  }
+  nav ul li a {
+    text-decoration: none;
+    color: #111;
+    font-weight: 500;
+  }
+  header {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+  }
+  @keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  header img {
+    width: 150px;
+    margin-bottom: 1rem;
+  }
+  header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+  }
+  header p {
+    font-size: 1.2rem;
+    font-weight: 300;
+  }
+  section {
+    padding: 6rem 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  .organigrama pre {
+    background: rgba(255, 255, 255, 0.85);
+    padding: 1rem;
+    border-radius: 5px;
+    overflow-x: auto;
+    font-family: monospace;
+  }
+  footer {
+    background-color: #2e2b2b;
+    color: white;
+    padding: 3rem 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    font-size: 0.9rem;
+  }
+  footer h4 {
+    margin-bottom: 1rem;
+    font-weight: 600;
+  }
+  footer ul {
+    list-style: none;
+    padding: 0;
+  }
+  footer ul li {
+    margin-bottom: 0.5rem;
+  }
+  footer ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  .newsletter input[type="email"] {
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    width: 80%;
+    border: none;
+    border-radius: 3px;
+  }
+  .newsletter button {
+    padding: 0.5rem 1rem;
+    background-color: white;
+    color: #2e2b2b;
+    border: none;
+    cursor: pointer;
+    margin-top: 0.5rem;
+  }
+  footer .copyright {
+    grid-column: 1 / -1;
+    text-align: center;
+    margin-top: 2rem;
+  }
+  

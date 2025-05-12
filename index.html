@@ -1,166 +1,31 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Society Security</title>
+  <link rel="stylesheet" href="styles.css" />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    body {
-      font-family: 'Poppins', sans-serif;
-      background: linear-gradient(120deg, #f3e5f5, #e1bee7);
-      background-size: 300% 300%;
-      animation: subtleBG 20s ease infinite;
-      color: #111;
-      line-height: 1.6;
-    }
-    @keyframes subtleBG {
-      0% { background-position: 0% 50%; }
-      50% { background-position: 100% 50%; }
-      100% { background-position: 0% 50%; }
-    }
-    header {
-      height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-      background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-      background-size: 400% 400%;
-      animation: gradientBG 15s ease infinite;
-      color: white;
-      text-align: center;
-      padding: 2rem;
-    }
-    @keyframes gradientBG {
-      0% { background-position: 0% 50%; }
-      50% { background-position: 100% 50%; }
-      100% { background-position: 0% 50%; }
-    }
-    header img {
-      width: 150px;
-      margin-bottom: 1rem;
-    }
-    header h1 {
-      font-family: 'Playfair Display', serif;
-      font-size: 3rem;
-      margin-bottom: 0.5rem;
-    }
-    header p {
-      font-size: 1.2rem;
-      font-weight: 300;
-    }
-    nav {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      background-color: white;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-      z-index: 1000;
-    }
-    nav ul {
-      display: flex;
-      justify-content: center;
-      list-style: none;
-      padding: 1rem;
-    }
-    nav ul li {
-      margin: 0 1.5rem;
-    }
-    nav ul li a {
-      text-decoration: none;
-      color: #111;
-      font-weight: 500;
-    }
-    section {
-      padding: 6rem 2rem;
-      max-width: 1000px;
-      margin: 0 auto;
-    }
-    h2 {
-      font-family: 'Playfair Display', serif;
-      font-size: 2rem;
-      margin-bottom: 1rem;
-    }
-    .organigrama pre {
-      background: rgba(255, 255, 255, 0.85);
-      padding: 1rem;
-      border-radius: 5px;
-      overflow-x: auto;
-      font-family: monospace;
-    }
-    footer {
-      background-color: #2e2b2b;
-      color: white;
-      padding: 3rem 2rem;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 2rem;
-      font-size: 0.9rem;
-    }
-    footer h4 {
-      margin-bottom: 1rem;
-      font-weight: 600;
-    }
-    footer ul {
-      list-style: none;
-      padding: 0;
-    }
-    footer ul li {
-      margin-bottom: 0.5rem;
-    }
-    footer ul li a {
-      color: white;
-      text-decoration: none;
-    }
-    .newsletter input[type="email"] {
-      padding: 0.5rem;
-      margin-top: 0.5rem;
-      width: 80%;
-      border: none;
-      border-radius: 3px;
-    }
-    .newsletter button {
-      padding: 0.5rem 1rem;
-      background-color: white;
-      color: #2e2b2b;
-      border: none;
-      cursor: pointer;
-      margin-top: 0.5rem;
-    }
-    .copyright {
-      grid-column: 1 / -1;
-      text-align: center;
-      margin-top: 2rem;
-    }
-  </style>
 </head>
 <body>
   <nav>
     <ul>
       <li><a href="#quienes">Quiénes Somos</a></li>
-      <li><a href="#servicios">Servicios</a></li>
-      <li><a href="#organigrama">Organigrama</a></li>
-      <li><a href="#mision-vision">Misión y Visión</a></li>
-      <li><a href="#foda">Análisis FODA</a></li>
+      <li><a href="#mision">Misión & Visión</a></li>
       <li><a href="#valores">Valores</a></li>
+      <li><a href="#foda">FODA</a></li>
       <li><a href="#recursos">Recursos</a></li>
+      <li><a href="#instalaciones">Instalaciones</a></li>
+      <li><a href="#localizacion">Localización</a></li>
+      <li><a href="#organigrama">Organigrama</a></li>
       <li><a href="#contacto">Contacto</a></li>
     </ul>
   </nav>
 
   <header>
-    <img src="/mnt/data/9b0ff208-4ad9-42c5-9d2a-e8ecd7198b5b.png" alt="Logo Society Security">
-    <div>
-      <h1>Society Security</h1>
-      <p>Protegemos lo que más importa, en cualquier rincón del mundo.</p>
-    </div>
+    <img src="logo.png" alt="Logo Society Security" />
+    <h1>Society Security</h1>
+    <p>Protegemos lo que más importa, en cualquier rincón del mundo.</p>
   </header>
 
   <section id="quienes">
@@ -168,71 +33,74 @@
     <p>Society Security es una empresa global de seguridad con sede central en Buenos Aires. Contamos con más de 30 oficinas en todo el mundo, ofreciendo protección física y digital, consultoría en riesgos y tecnología de vigilancia avanzada.</p>
   </section>
 
-  <section id="organigrama">
-    <h2>Organigrama</h2>
-    <p>A continuación se muestra la estructura organizativa de Society Security:</p>
-    <div class="organigrama">
-        <pre>
-            <img src="organigrama.jpeg" alt="organigrama">
-        </pre>
-    </div>
-</section>
-
-  
-  <section id="mision-vision">
+  <section id="mision">
     <h2>Misión y Visión</h2>
-    <h3>Misión</h3>
-    <p>Brindar soluciones integrales de seguridad adaptadas a las necesidades de nuestros clientes, garantizando su protección y confianza a través de tecnología avanzada y un equipo altamente capacitado.</p>
-    <h3>Visión</h3>
-    <p>Ser líderes en el ámbito global de la seguridad, ofreciendo servicios innovadores y personalizados que fortalezcan la seguridad de nuestros clientes en un mundo cada vez más interconectado.</p>
-  </section>
-
-  <section id="foda">
-    <h2>Análisis FODA</h2>
-    <h3>Fortalezas</h3>
-    <ul>
-      <li>Presencia global con más de 30 oficinas</li>
-      <li>Equipo altamente capacitado en seguridad física y digital</li>
-      <li>Innovación tecnológica en sistemas de vigilancia</li>
-    </ul>
-    <h3>Oportunidades</h3>
-    <ul>
-      <li>Crecimiento del mercado de la ciberseguridad</li>
-      <li>Expansión a nuevos mercados y regiones</li>
-      <li>Aumento de la demanda de protección ejecutiva</li>
-    </ul>
-    <h3>Debilidades</h3>
-    <ul>
-      <li>Dependencia de la tecnología frente a amenazas cibernéticas</li>
-      <li>Alta competencia en el sector de seguridad</li>
-    </ul>
-    <h3>Amenazas</h3>
-    <ul>
-      <li>Incremento de riesgos cibernéticos</li>
-      <li>Cambios regulatorios en diferentes países</li>
-    </ul>
+    <p><strong>Misión:</strong> Proteger personas, bienes e información con soluciones innovadoras de seguridad física y digital.</p>
+    <p><strong>Visión:</strong> Ser líderes globales en seguridad integral, confiables y en constante evolución tecnológica.</p>
   </section>
 
   <section id="valores">
     <h2>Valores</h2>
     <ul>
-      <li>Integridad: Actuamos con honestidad y ética en todo lo que hacemos.</li>
-      <li>Innovación: Buscamos siempre las soluciones más avanzadas y efectivas.</li>
-      <li>Compromiso: Nos dedicamos al bienestar y seguridad de nuestros clientes.</li>
-      <li>Confianza: Trabajamos para ser una empresa en la que nuestros clientes puedan confiar plenamente.</li>
+      <li>Integridad</li>
+      <li>Responsabilidad</li>
+      <li>Compromiso</li>
+      <li>Innovación</li>
+      <li>Excelencia</li>
+    </ul>
+  </section>
+
+  <section id="foda">
+    <h2>Análisis FODA</h2>
+    <ul>
+      <li><strong>Fortalezas:</strong> Cobertura internacional, tecnología avanzada.</li>
+      <li><strong>Oportunidades:</strong> Expansión a nuevos mercados, alianzas estratégicas.</li>
+      <li><strong>Debilidades:</strong> Alto costo operativo.</li>
+      <li><strong>Amenazas:</strong> Ciberataques, competencia creciente.</li>
     </ul>
   </section>
 
   <section id="recursos">
     <h2>Recursos</h2>
-    <p>Contamos con los mejores recursos humanos, tecnológicos y logísticos para ofrecer soluciones de seguridad personalizadas. Desde tecnología de vigilancia avanzada hasta expertos en ciberseguridad, nuestro equipo está preparado para enfrentar cualquier desafío.</p>
+    <p>Contamos con recursos humanos altamente capacitados, sistemas de inteligencia artificial, vehículos blindados, drones de vigilancia y software propio de monitoreo 24/7.</p>
+  </section>
+
+  <section id="instalaciones">
+    <h2>Instalaciones</h2>
+    <p>Nuestras sedes incluyen centros de comando y control, centros de entrenamiento táctico, laboratorios de ciberseguridad y oficinas administrativas.</p>
+  </section>
+
+  <section id="localizacion">
+    <h2>Localización</h2>
+    <p>Sede Central: Av. Seguridad Global 1234, Buenos Aires, Argentina.</p>
+    <p>Presencia en: Nueva York, Londres, Tokio, Berlín, Ciudad del Cabo, Sídney, entre otras.</p>
+  </section>
+
+  <section id="organigrama" class="organigrama">
+    <h2>Organigrama</h2>
+    <pre>
+CEO Global – Sede Central (Buenos Aires)
+  │
+  ├── COO Global (Operaciones)
+  ├── CTO Global (Tecnología)
+  ├── CISO Global (Ciberseguridad)
+  │
+  └── Directores Regionales (Europa, Asia, África, Oceanía, Norteamérica)
+         │
+     Gerente Regional LATAM (Buenos Aires)
+         ├── Gerente de Operaciones
+         ├── Gerente de Tecnología
+         ├── Jefe de Ciberseguridad
+         └── Jefe de Seguridad Física
+              └── Supervisores de Zona
+                   └── Agentes de Campo / Personal de Seguridad
+    </pre>
   </section>
 
   <section id="contacto">
     <h2>Contacto</h2>
     <p>Email: contacto@societysecurity.com</p>
     <p>Teléfono: +54 11 1234 5678</p>
-    <p>Dirección: Av. Seguridad Global 1234, Buenos Aires, Argentina</p>
   </section>
 
   <footer>
@@ -261,12 +129,14 @@
     <div class="newsletter">
       <h4>NEWSLETTER</h4>
       <p>Suscríbete para recibir novedades y ofertas exclusivas.</p>
-      <input type="email" placeholder="Tu email">
+      <input type="email" placeholder="Tu email" />
       <button>Suscribirse</button>
     </div>
     <div class="copyright">
       &copy; 2025 Society Security - Todos los derechos reservados
     </div>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
