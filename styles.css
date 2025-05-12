@@ -303,3 +303,34 @@
   padding-left: 1.5rem;
   list-style-type: disc;
 }
+
+/* Animación de fade-in suave */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Clase para activar la animación */
+.seccion-dos-columnas {
+  opacity: 0;
+  animation: fadeInUp 1s ease forwards;
+  animation-delay: 0.2s;
+}
+
+.organigrama {
+  transform: scale(0.8); /* Reduce el tamaño del organigrama al 80% */
+  transform-origin: top left; /* Mantén el organigrama alineado desde la esquina superior izquierda */
+  overflow: hidden; /* Asegúrate de que no se salga del contenedor */
+  width: 100%; /* Ajusta el contenedor a todo el ancho disponible */
+}
+
+.organigrama img {
+  width: 100%; /* Si tu organigrama es una imagen, ajusta su ancho */
+  height: auto; /* Mantén la proporción de la imagen */
+}
