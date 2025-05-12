@@ -441,3 +441,205 @@
   border-radius: 8px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
 }
+
+/* Sección de Instalaciones con fondo blanco */
+.instalaciones {
+  background: #ffffff;  /* Fondo blanco */
+  padding: 3rem 2rem;
+  margin: 3rem auto;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.3s ease;
+  width: 90%;
+}
+
+/* Efecto hover para resaltar cuando el ratón pase sobre la caja */
+.instalaciones:hover {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Títulos y textos dentro de Instalaciones */
+.instalaciones h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.instalaciones p {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin-top: 1rem;
+}
+
+/* Sección de Localización con fondo blanco */
+.localizacion {
+  background: #ffffff;  /* Fondo blanco */
+  padding: 3rem 2rem;
+  margin: 3rem auto;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.3s ease;
+  width: 90%;
+}
+
+/* Efecto hover para resaltar cuando el ratón pase sobre la caja */
+.localizacion:hover {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Títulos y textos dentro de Localización */
+.localizacion h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.localizacion p {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin-top: 1rem;
+}
+
+/* Instalarse la estructura de columnas con imagen a la izquierda y derecha */
+.instalaciones .contenido,
+.localizacion .contenido {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin: auto;
+}
+
+/* Para imagen a la izquierda y texto a la derecha (Instalaciones) */
+.instalaciones .contenido .imagen {
+  order: 1; /* Imagen a la izquierda */
+  flex: 1 1 40%;
+}
+
+.instalaciones .contenido .texto {
+  order: 2; /* Texto a la derecha */
+  flex: 1 1 50%;
+}
+
+/* Para imagen a la derecha y texto a la izquierda (Localización) */
+.localizacion .contenido.reverse .imagen {
+  order: 2; /* Imagen a la derecha */
+  flex: 1 1 40%;
+}
+
+.localizacion .contenido.reverse .texto {
+  order: 1; /* Texto a la izquierda */
+  flex: 1 1 50%;
+}
+
+/* Mantener el estilo de las imágenes */
+.imagen img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 12px;
+  background-color: #ddd; /* fondo gris si no hay imagen */
+}
+
+/* Estilos de los textos */
+.texto h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #0a0a0a;
+}
+
+.texto p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Estructura de las secciones con imagen a la izquierda y texto a la derecha */
+.instalaciones .contenido,
+.localizacion .contenido {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin: auto;
+  flex-wrap: wrap; /* Asegura que los elementos se apilen en pantallas pequeñas */
+}
+
+/* Para imagen a la izquierda y texto a la derecha (Instalaciones) */
+.instalaciones .contenido .imagen {
+  order: 1;
+  flex: 1 1 40%;
+}
+
+.instalaciones .contenido .texto {
+  order: 2;
+  flex: 1 1 50%;
+}
+
+/* Para imagen a la derecha y texto a la izquierda (Localización) */
+.localizacion .contenido.reverse .imagen {
+  order: 2;
+  flex: 1 1 40%;
+}
+
+.localizacion .contenido.reverse .texto {
+  order: 1;
+  flex: 1 1 50%;
+}
+
+/* Estilos para imagen */
+.imagen img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 12px;
+  background-color: #ddd;
+}
+
+/* Estilos de los textos */
+.texto h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #0a0a0a;
+}
+
+.texto p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Estilos para pantallas pequeñas (Responsive) */
+@media (max-width: 768px) {
+  .instalaciones .contenido,
+  .localizacion .contenido {
+    flex-direction: column; /* Apilar los elementos verticalmente */
+    gap: 1rem; /* Reducir el espacio entre los elementos */
+  }
+
+  /* Cambiar el tamaño de las imágenes para pantallas pequeñas */
+  .imagen img {
+    max-width: 100%; /* Asegura que la imagen ocupe todo el ancho disponible */
+  }
+
+  /* Ajustar el tamaño de los títulos en pantallas pequeñas */
+  .texto h2 {
+    font-size: 1.5rem;
+  }
+
+  .texto p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .texto h2 {
+    font-size: 1.3rem;
+  }
+
+  .texto p {
+    font-size: 0.95rem;
+  }
+}
